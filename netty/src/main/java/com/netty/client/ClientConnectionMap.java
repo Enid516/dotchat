@@ -23,6 +23,16 @@ public class ClientConnectionMap {
         }
     }
 
+    public static ClientConnection getClientConnection(long netId){
+        ClientConnection connection = allClientMap.get(netId);
+        if (connection != null) {
+            return connection;
+        } else {
+            logger.error("ClientConnection not found in allClientConnection,netId: {}",netId);
+            return null;
+        }
+    }
+
     public static void addClientConnection(ChannelHandlerContext ctx){
         ClientConnection connection = new ClientConnection(ctx);
         long netId;
