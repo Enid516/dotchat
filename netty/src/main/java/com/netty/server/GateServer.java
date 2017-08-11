@@ -9,10 +9,11 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GateServer {
+    private static final Logger logger = LoggerFactory.getLogger(GateServer.class);
     private int port;
 
     public GateServer(int port) {
@@ -37,7 +38,7 @@ public class GateServer {
 
         // Bind and start to accept incoming connections.
         ChannelFuture f = b.bind(port).sync();
-        Logger.getLogger("t").info("bind port: " + port);
+        logger.info("bind port: " + port);
 
         // Wait until the server socket is closed.
         // In this example, this does not happen, but you can do that to gracefully

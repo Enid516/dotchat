@@ -1,6 +1,5 @@
 package com.netty.client;
 
-import com.sun.deploy.util.SessionState;
 import io.netty.channel.ChannelHandlerContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

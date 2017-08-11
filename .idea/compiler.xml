@@ -9,6 +9,7 @@
         <module name="app" />
         <module name="core" />
         <module name="netty" />
+        <module name="protocol" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -16,6 +17,7 @@
       <module name="core" target="1.5" />
       <module name="dotchat" target="1.5" />
       <module name="netty" target="1.5" />
+      <module name="protocol" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

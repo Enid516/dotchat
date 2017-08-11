@@ -97,9 +97,7 @@ public class UpdateProfileServlet extends BaseServlet {
 		randomFile.close();
 		tempFile.delete();
 		//重新指定页面，返回结果
-		req.setAttribute("result", "上传成功！");
-		RequestDispatcher dispatcher = req.getRequestDispatcher("jsp/01.jsp");
-		dispatcher.forward(req, resp);
+		resp.getWriter().write("上传成功");
 	}
 	
 }

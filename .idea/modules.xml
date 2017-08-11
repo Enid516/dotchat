@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/dotchat.iml" filepath="$PROJECT_DIR$/dotchat.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/protocol/protocol.iml" filepath="$PROJECT_DIR$/protocol/protocol.iml" />
     </modules>
   </component>
 </project>

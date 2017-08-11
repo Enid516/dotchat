@@ -45,4 +45,13 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.dotchat.servlet.UpdateProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
 </web-app>
